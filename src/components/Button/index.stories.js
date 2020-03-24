@@ -1,20 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./styles.css";
 
-const Button = ({ children, buttonType, onClick }) => (
-  <button onClick={onClick} className={buttonType}>
-    {children}
-  </button>
-);
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
+import Button from ".";
 
-Button.defaultProps = {
-  buttonType: "primary"
-};
-
-Button.propTypes = {
-  children: PropTypes.node.isRequired,
-  buttonType: PropTypes.oneOf(["primary", "secondary"])
-};
-
-export default Button;
+storiesOf("Button", module).add("Primary", () => (
+  <Button buttonType="primary" onClick={action("click")}>
+    Hello World
+  </Button>
+));
