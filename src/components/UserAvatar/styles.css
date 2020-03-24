@@ -1,0 +1,35 @@
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.userAvatar.red {
+  background-image: linear-gradient(90deg, #d4145a, #fbb03b);
+  color: white;
+}
+
+.userAvatar.blue {
+  background-image: linear-gradient(90deg, #2e3192, #1bffff);
+  color: white;
+}
+
+.userAvatar.purple {
+  background-image: linear-gradient(90deg, #662d8c, #ed1e79);
+  color: white;
+}
+
+.userAvatar.mystic {
+  background-image: linear-gradient(90deg, #b066fe, #63e2ff);
+  color: white;
+}
+
+.userAvatar.silver {
+  background-image: linear-gradient(45deg, #808080, #e6e6e6);
+  color: white;
+}
