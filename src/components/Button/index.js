@@ -1,20 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./styles.css";
+import Button from "@material-ui/core/Button";
+import "./styles.scss";
 
-const Button = ({ children, buttonType, onClick }) => (
-  <button onClick={onClick} className={buttonType}>
+const UIbutton = ({ children, buttonType, onClick }) => (
+  <Button onClick={onClick} variant="contained" color={buttonType}>
     {children}
-  </button>
+  </Button>
 );
 
-Button.defaultProps = {
+UIbutton.defaultProps = {
   buttonType: "primary"
 };
 
-Button.propTypes = {
+UIbutton.propTypes = {
   children: PropTypes.node.isRequired,
   buttonType: PropTypes.oneOf(["primary", "secondary"])
 };
 
-export default Button;
+export default UIbutton;
