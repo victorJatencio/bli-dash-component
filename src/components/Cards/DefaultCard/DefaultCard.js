@@ -38,7 +38,11 @@ const DefaultCard = ({ title, children }) => {
         </Typography>
       </CardHeader>
       <CardContent>
-        <div className="card--content">{children}</div>
+        <div className="card--content">
+          <Typography variant="body2" component="p">
+            {children}
+          </Typography>
+        </div>
       </CardContent>
     </Card>
   );
