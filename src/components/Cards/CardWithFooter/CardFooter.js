@@ -39,10 +39,10 @@ const CardWithFooter = ({ title, children }) => {
         </Typography>
       </CardHeader>
       <CardContent>
-        <div className="card--content">{children}</div>
+        <div className="card--content"></div>
       </CardContent>
       <CardContent className="card--footer">
-        <div className="card--footer--content"></div>
+        <div className="card--footer--content">{children}</div>
       </CardContent>
     </Card>
   );
