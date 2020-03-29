@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 });
 
 const CardHeader = styled(CardContent)({
-  padding: "0.7rem 1rem"
+  padding: "10px"
 });
 
 const CardWithFooter = ({ title, children }) => {
@@ -41,9 +41,7 @@ const CardWithFooter = ({ title, children }) => {
       <CardContent>
         <div className="card--content"></div>
       </CardContent>
-      <CardContent className="card--footer">
-        <div className="card--footer--content">{children}</div>
-      </CardContent>
+      <div className="card--footer">{children}</div>
     </Card>
   );
 };
